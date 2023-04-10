@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poetry-project"
+version = "0.1.0"
+description = ""
+authors = ["Kostiantyn-Liapkalo <lynx87@ukr.net>"]
+readme = "README.md"
+packages = [{include = "poetry_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
